@@ -1,20 +1,20 @@
 import React from 'react';
-import { Button } from '@remax/one';
+import { Button as RemaxButton } from '@remax/one';
 import { ButtonProps } from './PropsType';
 
-const VantButton = (props: ButtonProps) => {
+const Button = (props: ButtonProps) => {
   const { style, className, children, ...others } = props;
 
   return (
-    <Button className={className} style={style} {...others}>
+    <RemaxButton className={className} style={style} {...others}>
       {children}
-    </Button>
+    </RemaxButton>
   );
 };
 
-VantButton.defaultProps = {
+Button.defaultProps = {
   type: 'default',
   size: 'normal',
 };
 
-export default VantButton;
+export default Button;
