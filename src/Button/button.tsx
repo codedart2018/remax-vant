@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button } from '@remax/one';
-import { VantButtonProps } from './PropsType';
+import { ButtonProps } from './PropsType';
 
-const VantButton = (props: VantButtonProps) => {
+const VantButton = (props: ButtonProps) => {
   const { style, className, children, ...others } = props;
 
   return (
